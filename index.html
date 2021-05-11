@@ -1,61 +1,65 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="./style.css">
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <title>Landing page</title>
-    </head>
-    <body>
-        <div class="container">       
-            <div class="hero">
-                <div class="picture-hero"><img src="./pictures/kutya1.JPG" alt="Kutya kalapban"></div>
-                <div class="left-side">
-                    <div class="button"><button>Segítek!</button></div>
-                    <div class="main-title"><h1>Neked 1% nekem az élet!</h1></div>
-                </div>
-            </div>
-            <div class="supporting-title">
-                <h2>Segíts, hogy növelhessük az alábbi számokat!</h2>
-            </div>
-            <div class="benefits">
-                <div class="benefit-card">
-                    <div class="picture-benefit"><img src="./pictures/paw.png" alt="Kutya kalapban"></div>
-                    <p class="text-benefit">Megmentettük</p> 
-                    <div class="counter">counter</div>
-                </div>
-                <div class="benefit-card">
-                    <div class="picture-benefit"><img src="./pictures/first-aid-kit.png" alt="Kutya kalapban"></div>
-                    <p class="text-benefit">Meggyógyítottuk</p> 
-                    <div class="counter">counter</div>
-                </div>
-                <div class="benefit-card">
-                    <div class="picture-benefit"><img src="./pictures/animal-shelter.png" alt="Kutya kalapban"></div>
-                    <p class="text-benefit">Gazdisodott</p> 
-                    <div class="counter">counter</div>
-                </div>
-            </div>
-            <div class="social-proof">
-                <div class="title-proof"><h2>Rajtuk már segítettünk!</h2></div>
-                <div class="social-card">
-                    <div class="picture-proof">picture-proof</div>
-                    <div class="dog-name">Dog name</div>
-                    <div class="text-proof">text-proof</div>
-                </div>
-                <div class="social-card">
-                    <div class="picture-proof">picture-proof</div>
-                    <div class="dog-name">Dog name</div>
-                    <div class="text-proof">text-proof</div>
-                </div>
-                <div class="social-card">
-                    <div class="picture-proof">picture-proof</div>
-                    <div class="dog-name">Dog name</div>
-                    <div class="text-proof">text-proof</div>
-                </div>
-            </div>
-            <div class="footer">
-                <div id="footer">footer</div>
-            </div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Josefin+Sans&display=swap" rel="stylesheet">
+    <title>Adj</title>
+</head>
+<body>
+    <!--headline-->
+    <div id="headline">
+        <div id="left-side">
+            <h1>Neked 1%, nekem az élet</h1>
+            <button class="button" type="button">Segítek!</button>
         </div>
-    </body>
+        <img id="hero-photo" src="hero_photo.jpg" alt="Oops. Where's the picture?">
+    </div>
+    <!--support title-->
+    <div id="support-title"><h2>Segíts az Eszkulápnak, hogy növelhessük az alábbi számokat!</h2></div>
+    <!--benefits-->
+    <div id="benefits">
+        <div class="benefit-card">
+            <img src="blue icons/animal-shelter.svg">
+            <p>Megmentettük</p>
+            <div class="counter"><p>5136</p></div>
+        </div>
+        <div class="benefit-card">
+            <img src="blue icons/first-aid-kit.svg">
+            <p>Meggyógyítottuk</p>
+            <div class="counter"><p>4869</p></div>
+        </div>
+        <div class="benefit-card">
+            <img src="blue icons/paw.svg">
+            <p>Gazdisodott</p>
+            <div class="counter"><p>3765</p></div>
+        </div>
+    </div>
+    <!--social proof-->
+    <div id=social-proof>
+        <div id="social-proof-title">
+            <p>Őket már megmentettük</p>
+        </div>
+        <div id="social-proof-card1">
+            <div>photo1</div>
+            <div>dog name1</div>
+            <div>text1</div>
+        </div>
+        <div id="social-proof-card2">
+            <div>photo2</div>
+            <div>dog name2</div>
+            <div>text2</div>
+        </div>
+        <div id="social-proof-card3">
+            <div>photo3</div>
+            <div>dog name3</div>
+            <div>text3</div>
+        </div>
+    </div>
+    <!--footer-->
+    <div id="footer">footer</div>
+    
+</body>
 </html>

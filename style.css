@@ -1,129 +1,118 @@
-@font-face {
-    font-family: "armatic";
-    src: url("./fonts/AmaticSC-Regular.ttf") format("truetype");
-}
-
 body {
-    font-family: "armatic";
     margin: 0 auto;
     padding: 0;
-    max-width: 960px;
+    font-family: "Josefin Sans", sans-serif;
+    color: #0D161C;
 }
 
-.container {
-    display: grid;
-    grid-gap: 5px;
-    margin: 0px 10px 0px 10px;
-    background-color: white;
-    grid-template-rows: 40% 10% 25% 20% 5%;
-    
+#headline {
+    background-color: #92B6B1;
+    height: 35em;
+    display: flex;
 }
 
-.hero {
-    display: grid;
-    grid-template-columns: 60% 40%;
-    background-color: white;
-    border: grey 5px solid;
-}
-
-.left-side {
-    display:grid;
-    grid-template-rows: 70% 30% ;
-    order:1;
-    grid-column-start: 1;
-    background-color: yellow;
-    justify-items: center;
-    align-items: center;
-}
-
-.picture-hero {
-    grid-column-start: 2;
-    order: 2;
-    align-self: center;
-    justify-self: center;
-}
-
-.picture-hero img {
-    height: 100%;
-    width: 100%;
-}
-
-.main-title {
-    background-color: aqua;
-    order: 1;
-    grid-row-start:1;
+#left-side {
+    margin-left: auto;
+    margin-top:auto;
+    margin-bottom: auto;
+    text-align: center;   
 }
 
 .button {
-    order:2;
-    background-color: green;
-    grid-row-start: 2;
-    align-self: flex-start; 
+    color: white;
+    font-family: "Amatic Sc", sans-serif;
+    font-size: 3.3em;
+    font-weight: bold;
+    border-color: white;
+    background-color: transparent;
+    padding: 0.4em;
+    border-style: double;
+    border-radius: 7px;
+    border-width: 0.2em;
 }
 
-.supporting-title {
-    display:grid;
-    background-color: teal;
-    justify-items: center;
+.button:hover {
+    background-color: white;
+    color:#92B6B1;
+}
+
+#hero-photo{
+    height: 100%;
+    margin-left: auto;
+}
+
+#support-title {
+    background-color: #E8DDB5;
+    font-family: "Amatic Sc";
+    font-size: 2rem;
+    height: 3em;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
-.benefits {
+#benefits {
     display: grid;
-    background-color: tomato;
-    grid-template-columns: repeat(3, 33%);
-    justify-items: center;
-    align-items: center;
- }
-
- .benefit-card {
-     background-color: green;
-     display: grid;
-     grid-template-rows: 5fr 2fr 1fr;
-     justify-items: center;
-     align-items: center;
- }
-
- .picture-benefit img {
-     height: 50%;
-     width: 50%;
-     position: relative;
-     left: 50%;
-     transform: translate(-50%);
-     border-radius: 10%;
- }
-
- .picture-benefit {
-     background-color: greenyellow;
- }
-/* .counter {
-    align-self: flex-start;
-} */
- 
-.social-proof {
-     display: grid;
-     background-color: yellowgreen;
-     grid-template-columns: repeat(3, 33%); 
-     justify-items: center;
-     align-items: center;
- }
- 
-.social-card {
-    display: grid;
-    background-color: green;
-    grid-template-rows: 3fr 1fr 3fr;
-    grid-row-start: 2;
-    justify-items: center;
-    align-items: center;
-} 
-
-.title-proof {
-    grid-column-start: 2;
-    justify-items: center;
+    height: 15em;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+    align-items: center;   
 }
-.footer {
-    display: grid;
-    background-color: grey;
-    justify-items: center;
-    align-items: center;
+
+.benefit-card {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
 }
+
+.benefit-card img {
+    height: 4em;
+   }
+
+.benefit-card p {
+    text-align: center;
+}
+
+.counter {
+
+}
+
+#social-proof {
+    background-color: #B2C9AB;
+    height: 20em;
+    display: grid;
+    grid-template-areas: 'title title title'
+                        'card1 card2 card3';
+    justify-content: space-around;
+    align-items: center;   
+}
+
+#social-proof-title{
+    text-align: center;
+    grid-area: title;
+    font-family: "Amatic Sc";
+    font-weight: bold;
+    font-size: 3rem;
+}
+#social-proof-title p::selection{
+    background: white;
+    color:#B2C9AB;
+}
+
+#social-proof-card1{
+    grid-area: card1;
+}
+
+#social-proof-card2{
+    grid-area: card2;
+}
+
+#social-proof-card3{
+    grid-area: card3;
+}
+
+#footer {
+    background-color: #92B6B1;
+    height: 5em;
+}
+
