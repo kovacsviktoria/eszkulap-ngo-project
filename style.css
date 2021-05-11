@@ -1,7 +1,13 @@
+@font-face {
+    font-family: "armatic";
+    src: url("./fonts/AmaticSC-Regular.ttf") format("truetype");
+}
+
 body {
-  margin: 0 auto;
-  padding: 0;
-  max-width: 960px;
+    font-family: "armatic";
+    margin: 0 auto;
+    padding: 0;
+    max-width: 960px;
 }
 
 .container {
@@ -37,6 +43,11 @@ body {
     justify-self: center;
 }
 
+.picture-hero img {
+    height: 100%;
+    width: 100%;
+}
+
 .main-title {
     background-color: aqua;
     order: 1;
@@ -61,38 +72,55 @@ body {
     display: grid;
     background-color: tomato;
     grid-template-columns: repeat(3, 33%);
-    grid-template-rows: 40% 40% 20%;
     justify-items: center;
     align-items: center;
-    gap: 5px 5px;
  }
 
-.counter {
+ .benefit-card {
+     background-color: green;
+     display: grid;
+     grid-template-rows: 5fr 2fr 1fr;
+     justify-items: center;
+     align-items: center;
+ }
+
+ .picture-benefit img {
+     height: 50%;
+     width: 50%;
+     position: relative;
+     left: 50%;
+     transform: translate(-50%);
+     border-radius: 10%;
+ }
+
+ .picture-benefit {
+     background-color: greenyellow;
+ }
+/* .counter {
     align-self: flex-start;
-}
+} */
  
 .social-proof {
      display: grid;
      background-color: yellowgreen;
      grid-template-columns: repeat(3, 33%); 
-     grid-template-rows: 20% 40% 40%;
      justify-items: center;
      align-items: center;
  }
  
-.title-proof {
-    grid-column: 1 / span 3;
-    background-color: red;
-}
-
-.picture-proof {
+.social-card {
+    display: grid;
+    background-color: green;
+    grid-template-rows: 3fr 1fr 3fr;
     grid-row-start: 2;
-}
+    justify-items: center;
+    align-items: center;
+} 
 
-.text-proof {
-    grid-row-start: 3;
+.title-proof {
+    grid-column-start: 2;
+    justify-items: center;
 }
- 
 .footer {
     display: grid;
     background-color: grey;
