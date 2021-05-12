@@ -1,23 +1,29 @@
+
+
 body {
-    margin: 0 auto;
-    /*margin: 0 7em 0 7em;*/
+    margin: 0;
     padding: 0;
     font-family: "Josefin Sans", sans-serif;
     color: #21282c;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 
 #headline {
     background-color: #92B6B1;
-    height: 35em;
     display: flex;
+
+    width: 100%;
 }
 
 #left-side {
+
     margin-top:auto;
     margin-bottom: auto;
     text-align: center;
     margin-left: auto;  
+    padding-bottom: 2vmin;
+ 
 }
 
 #left-side h1::selection{
@@ -32,16 +38,17 @@ body {
 
 #hero-text {
     text-transform: uppercase;
+    font-size: 10vmin;
 }
 
 .button {
     color: white;
     font-family: "Amatic Sc", sans-serif;
-    font-size: 3.3em;
+    font-size: 7vmin;
     font-weight: bold;
     border-color: white;
     background-color: transparent;
-    padding: 0.4em;
+    padding: 1vmin;
     border-style: double;
     border-radius: 7px;
     border-width: 0.2em;
@@ -52,9 +59,10 @@ body {
     color:#92B6B1;
 }
 
-#hero-photo{
-    height: 100%;
+#hero-photo {
+    width: 40vw;
     margin-left: auto;
+
 }
 
 #hero-photo::selection{
@@ -63,11 +71,14 @@ body {
 
 #support-title {
     background-color: #E8DDB5;
-    font-family: "Amatic Sc";
-    font-size: 2rem;
+    font-family: "Amatic Sc";    
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#support-title h2 {
+    font-size: 8vmin;
 }
 
 #support-title h2::selection{
@@ -77,13 +88,14 @@ body {
 
 #benefits {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     /*justify-content: space-around;
     align-items: center;*/
-    padding-left: 20em;
-    padding-right: 20em;
     padding-top: 3em;
     padding-bottom: 3em;
+  margin-left: 12vw;
+  margin-right: 12vw;
+
 }
 
 .benefit-card{
@@ -92,8 +104,10 @@ body {
     /*align-content: center;*/
 }
 
+
 .benefit-card img {
     height: 6em;
+    
    }
 
 .benefit-card img::selection{
@@ -102,6 +116,7 @@ body {
 
 .benefit-card p {
     text-align: center;
+    
 }
 
 .benefit-card p::selection{
@@ -123,19 +138,21 @@ body {
 #social-proof {
     background-color: #B2C9AB;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
- /*   grid-template-areas: 'title title title'
-                        'card1 card2 card3';*/
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+
     justify-content: space-around;
     align-items: center;   
 }
 
 #social-proof-title {
+    background-color: #B2C9AB;
+    margin: 0;
     text-align: center;
     font-family: "Amatic Sc";
     font-weight: bold;
-    font-size: 3rem;
-    grid-column: span 3;
+    font-size: 8vmin;
+    padding-top: 2vmin;
+  
 }
 
 #social-proof-title::selection{
@@ -145,8 +162,7 @@ body {
 
 .social-proof-card {
     padding: 1em;
-    margin-left: 6em;
-    margin-right: 6em;
+
     display: grid;
     grid-template-columns: 1;
     justify-items: center;
