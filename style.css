@@ -105,10 +105,11 @@ body {
 
 #social-proof {
     background-color: #B2C9AB;
-    height: 20em;
+    height: 30em;
     display: grid;
-    grid-template-areas: 'title title title'
-                        'card1 card2 card3';
+    grid-template-columns: 1fr 1fr 1fr;
+ /*   grid-template-areas: 'title title title'
+                        'card1 card2 card3';*/
     justify-content: space-around;
     align-items: center;   
 }
@@ -116,7 +117,6 @@ body {
 #social-proof-title {
     display: block;
     text-align: center;
-    grid-area: title;
     font-family: "Amatic Sc";
     font-weight: bold;
     font-size: 3rem;
@@ -127,11 +127,13 @@ body {
     color:#B2C9AB;
 }
 
-.social-proof-card1{
-    grid-area: card1;
-}
 .social-proof-card {
     padding: 1em;
+    display: grid;
+    grid-template-columns: 1;
+    
+
+
 }
 .social-proof-card img {
     height: 10em;
@@ -142,15 +144,11 @@ body {
     color:#B2C9AB;
 }
 
-.social-proof-card2{
-    grid-area: card2;
+
 }
 
 
 
-.social-proof-card3{
-    grid-area: card3;
-}
 
 
 #footer {
