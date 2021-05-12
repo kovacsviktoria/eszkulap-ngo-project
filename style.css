@@ -113,12 +113,15 @@ body {
     align-items: center;   
 }
 
-#social-proof-title{
+#social-proof-title {
+    display: block;
     text-align: center;
     grid-area: title;
     font-family: "Amatic Sc";
     font-weight: bold;
     font-size: 3rem;
+
+
 }
 
 #social-proof-title p::selection{
