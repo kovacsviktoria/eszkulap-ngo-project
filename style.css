@@ -120,8 +120,6 @@ body {
     font-family: "Amatic Sc";
     font-weight: bold;
     font-size: 3rem;
-
-
 }
 
 #social-proof-title p::selection{
@@ -129,36 +127,35 @@ body {
     color:#B2C9AB;
 }
 
-#social-proof-card1{
+.social-proof-card1{
     grid-area: card1;
 }
+.social-proof-card {
+    padding: 1em;
+}
+.social-proof-card img {
+    height: 10em;
 
-#social-proof-card1 p::selection{
+}
+.social-proof-card p::selection{
     background: white;
     color:#B2C9AB;
 }
 
-#social-proof-card2{
+.social-proof-card2{
     grid-area: card2;
 }
 
-#social-proof-card2 p::selection{
-    background: white;
-    color:#B2C9AB;
-}
 
-#social-proof-card3{
+
+.social-proof-card3{
     grid-area: card3;
 }
 
-#social-proof-card3 p::selection{
-    background: white;
-    color:#B2C9AB;
-}
 
 #footer {
     background-color: #92B6B1;
-    height: 5em;
+    height: 15px;
 }
 
 #footer::selection{
