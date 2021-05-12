@@ -2,7 +2,7 @@ body {
     margin: 0 auto;
     padding: 0;
     font-family: "Josefin Sans", sans-serif;
-    color: #0D161C;
+    color: #21282c;
 }
 
 #headline {
@@ -12,10 +12,20 @@ body {
 }
 
 #left-side {
-    margin-left: auto;
     margin-top:auto;
     margin-bottom: auto;
-    text-align: center;   
+    text-align: center;
+    margin-left: auto;  
+}
+
+#left-side h1::selection{
+    background: white;
+    color: #92B6B1;
+}
+
+#left-side button::selection{
+        background: #92B6B1;
+        color: white;
 }
 
 .button {
@@ -51,6 +61,11 @@ body {
     align-items: center;
 }
 
+#support-title h2::selection{
+    background: white;
+    color: #E8DDB5;
+}
+
 #benefits {
     display: grid;
     height: 15em;
@@ -69,8 +84,17 @@ body {
     height: 4em;
    }
 
+.benefit-card img::selection{
+    background: #B2C9AB;
+}
+
 .benefit-card p {
     text-align: center;
+}
+
+.benefit-card p::selection{
+    background: #B2C9AB;
+    color: white;
 }
 
 .counter {
@@ -94,6 +118,7 @@ body {
     font-weight: bold;
     font-size: 3rem;
 }
+
 #social-proof-title p::selection{
     background: white;
     color:#B2C9AB;
@@ -103,12 +128,27 @@ body {
     grid-area: card1;
 }
 
+#social-proof-card1 p::selection{
+    background: white;
+    color:#B2C9AB;
+}
+
 #social-proof-card2{
     grid-area: card2;
 }
 
+#social-proof-card2 p::selection{
+    background: white;
+    color:#B2C9AB;
+}
+
 #social-proof-card3{
     grid-area: card3;
+}
+
+#social-proof-card3 p::selection{
+    background: white;
+    color:#B2C9AB;
 }
 
 #footer {
@@ -116,3 +156,7 @@ body {
     height: 5em;
 }
 
+#footer::selection{
+    background: white;
+    color:#92B6B1;
+}
