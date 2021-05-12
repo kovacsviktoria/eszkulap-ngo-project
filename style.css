@@ -115,14 +115,14 @@ body {
 }
 
 #social-proof-title {
-    display: block;
     text-align: center;
     font-family: "Amatic Sc";
     font-weight: bold;
     font-size: 3rem;
+    grid-column: span 3;
 }
 
-#social-proof-title p::selection{
+#social-proof-title::selection{
     background: white;
     color:#B2C9AB;
 }
@@ -131,25 +131,17 @@ body {
     padding: 1em;
     display: grid;
     grid-template-columns: 1;
-    
-
-
 }
+
 .social-proof-card img {
     height: 10em;
-
+    
 }
+
 .social-proof-card p::selection{
     background: white;
     color:#B2C9AB;
 }
-
-
-}
-
-
-
-
 
 #footer {
     background-color: #92B6B1;
