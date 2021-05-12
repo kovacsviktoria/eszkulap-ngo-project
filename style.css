@@ -1,8 +1,10 @@
 body {
     margin: 0 auto;
+    /*margin: 0 7em 0 7em;*/
     padding: 0;
     font-family: "Josefin Sans", sans-serif;
     color: #21282c;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #headline {
@@ -24,8 +26,12 @@ body {
 }
 
 #left-side button::selection{
-        background: #92B6B1;
-        color: white;
+    background: #92B6B1;
+    color: white;
+}
+
+#hero-text {
+    text-transform: uppercase;
 }
 
 .button {
@@ -51,11 +57,14 @@ body {
     margin-left: auto;
 }
 
+#hero-photo::selection{
+    background: white;
+}
+
 #support-title {
     background-color: #E8DDB5;
     font-family: "Amatic Sc";
     font-size: 2rem;
-    height: 3em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -68,20 +77,23 @@ body {
 
 #benefits {
     display: grid;
-    height: 15em;
-    grid-template-columns: auto auto auto;
-    justify-content: space-around;
-    align-items: center;   
+    grid-template-columns: 1fr 1fr 1fr;
+    /*justify-content: space-around;
+    align-items: center;*/
+    padding-left: 20em;
+    padding-right: 20em;
+    padding-top: 3em;
+    padding-bottom: 3em;
 }
 
-.benefit-card {
+.benefit-card{
     display: flex;
     flex-direction: column;
-    align-content: center;
+    /*align-content: center;*/
 }
 
 .benefit-card img {
-    height: 4em;
+    height: 6em;
    }
 
 .benefit-card img::selection{
@@ -97,15 +109,19 @@ body {
     color: white;
 }
 
+.benefit-subtitle {
+    font-size: 1.3rem;
+}
+
 .counter {
     font-family: "Amatic Sc";
     font-size: 2.5rem;
     font-weight: bold;
+    margin: 0;
 }
 
 #social-proof {
     background-color: #B2C9AB;
-    height: 30em;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
  /*   grid-template-areas: 'title title title'
@@ -129,13 +145,22 @@ body {
 
 .social-proof-card {
     padding: 1em;
+    margin-left: 6em;
+    margin-right: 6em;
     display: grid;
     grid-template-columns: 1;
+    justify-items: center;
 }
 
 .social-proof-card img {
     height: 10em;
-    
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 0.2em solid white;
+}
+
+.social-proof-card img::selection{
+    background: white;
 }
 
 .social-proof-card p::selection{
@@ -143,9 +168,24 @@ body {
     color:#B2C9AB;
 }
 
+.dog-name {
+    font-size: 3rem;
+    font-family: "Amatic Sc";
+    margin-top: 0.3em;
+    margin-bottom: 0;
+}
+
+.short-desc {
+    text-align: justify;
+}
+
 #footer {
     background-color: #92B6B1;
-    height: 15px;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 1em;
+    letter-spacing: 0.1em;
 }
 
 #footer::selection{
