@@ -12,8 +12,17 @@ body {
 #headline {
     background-color: #92B6B1;
     display: flex;
+    width: 100vw;
+    max-width: 100%;
+    line-height: 15vmin;
+}
 
-    width: 100%;
+#headline span {
+    color: white;
+    font-family: "Amatic Sc", sans-serif;
+    font-size: 14vmin;
+    letter-spacing: 2vmin;
+    font-weight: 700;
 }
 
 #left-side {
@@ -22,7 +31,8 @@ body {
     margin-bottom: auto;
     text-align: center;
     margin-left: auto;  
-    padding-bottom: 2vmin;
+    padding-bottom: 5vmin;
+    width: 60vw;
  
 }
 
@@ -38,7 +48,7 @@ body {
 
 #hero-text {
     text-transform: uppercase;
-    font-size: 10vmin;
+    font-size: 9vmin;
 }
 
 .button {
@@ -75,10 +85,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 #support-title h2 {
     font-size: 8vmin;
+    padding-left: 2vmin;
+    padding-right: 2vmin;
 }
 
 #support-title h2::selection{
@@ -89,19 +102,16 @@ body {
 #benefits {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    /*justify-content: space-around;
-    align-items: center;*/
     padding-top: 3em;
     padding-bottom: 3em;
-  margin-left: 12vw;
-  margin-right: 12vw;
+    margin-left: 12vw;
+    margin-right: 12vw;
 
 }
 
 .benefit-card{
     display: flex;
     flex-direction: column;
-    /*align-content: center;*/
 }
 
 
@@ -138,10 +148,8 @@ body {
 #social-proof {
     background-color: #B2C9AB;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-
-    justify-content: space-around;
-    align-items: center;   
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    align-items: flex-start;   
 }
 
 #social-proof-title {
@@ -161,15 +169,17 @@ body {
 }
 
 .social-proof-card {
-    padding: 1em;
-
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-right: 3em;
+    padding-left: 3em;
     display: grid;
     grid-template-columns: 1;
     justify-items: center;
 }
 
 .social-proof-card img {
-    height: 10em;
+    height: 30vmin;
     border-radius: 50%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border: 0.2em solid white;
@@ -185,7 +195,7 @@ body {
 }
 
 .dog-name {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-family: "Amatic Sc";
     margin-top: 0.3em;
     margin-bottom: 0;
@@ -193,6 +203,7 @@ body {
 
 .short-desc {
     text-align: justify;
+    font-size: 16px;
 }
 
 #footer {
