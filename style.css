@@ -3,13 +3,12 @@ body {
     padding: 0;
     font-family: "Josefin Sans", sans-serif;
     color: #21282c;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #headline {
     background-color: #92B6B1;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 2fr;
     width: 100vw;
     max-width: 100%;
     line-height: 15vmin;
@@ -23,6 +22,16 @@ body {
     font-weight: 700;
 }
 
+#headline span::selection{
+    background: white;
+    color: #92B6B1;
+}
+
+br::selection{
+    background: white;
+    color: #92B6B1;
+}
+
 #left-side {
     display: grid;
     grid-template-rows: 3fr 1fr;
@@ -30,11 +39,13 @@ body {
     margin-top:auto;
     margin-bottom: auto;
     text-align: center;
-    margin-left: auto;  
+    margin-right: auto;
+    margin-left: auto;
     /* padding-bottom: 5vmin; */
-    width: 60vw;
+    width: 50vw;
     height: 80vh;
- 
+    max-height: 100%;
+    max-width: 100%;
 }
 
 #left-side h1::selection{
@@ -74,10 +85,10 @@ body {
 }
 
 #hero-photo {
-    width: 40vw;
+    width: 50vw;
     max-width: 100%;
     height: 80vh;
-    margin-left: auto;
+    /*margin-left: auto;*/
     grid-column-start: 2;
     grid-row-start: 1;
 }
@@ -90,15 +101,19 @@ body {
     position: relative;
     top: 80%;
     left: 2vw;
-
 }
+
 #hero-photo::selection{
+    background: white;
+}
+
+#hero-logo::selection{
     background: white;
 }
 
 #support-title {
     background-color: #E8DDB5;
-    font-family: "Amatic Sc";    
+    font-family: "Amatic Sc", sans-serif;    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -130,7 +145,6 @@ body {
     flex-direction: column;
 }
 
-
 .benefit-card img {
     height: 6em;
    }
@@ -154,7 +168,7 @@ body {
 }
 
 .counter {
-    font-family: "Amatic Sc";
+    font-family: "Amatic Sc", sans-serif;
     font-size: 2.5rem;
     font-weight: bold;
     margin: 0;
@@ -164,14 +178,14 @@ body {
     background-color: #B2C9AB;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-    align-items: flex-start;   
+    align-items: flex-start;
 }
 
 #social-proof-title {
     background-color: #B2C9AB;
     margin: 0;
     text-align: center;
-    font-family: "Amatic Sc";
+    font-family: "Amatic Sc", sans-serif;
     font-weight: bold;
     font-size: 8vmin;
     padding-top: 5vmin;
@@ -210,7 +224,7 @@ body {
 
 .dog-name {
     font-size: 2.5rem;
-    font-family: "Amatic Sc";
+    font-family: "Amatic Sc", sans-serif;
     margin-top: 0.3em;
     margin-bottom: 0;
 }
